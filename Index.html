@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Master CSS File -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Noramilze CSS file -->
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Print File -->
+    
+    <!-- The Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script></script>
+    <title></title>
+    </head>
+    <body>
+        <!-- Start Header  -->
+        <div class="header">
+            
+                <div class="logo"><span>Health</span> Care</div>
+                
+                <div class ="links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#addition">Add Patient</a></li>
+                        <li><a href="#search">Search</a></li>
+                        
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="landing"></div>
+        <!-- End Header  -->
+        <!-- Start Addition -->
+        <div class="addition" id="addition">
+            <div class="formHeader">
+                <h2>New Patient Form</h2>
+            </div>
+            <h3>Patient information</h3>
+            <hr>
+            <div class="container">
+            <form>
+                <ul>
+                <li>
+                <label for="id">ID:*</label>
+                <input type="text" id="id" name="id" required placeholder="ID">
+                <span>This ID is already used</span>
+                </li>
+                <br>
+                <li>
+                <label for="fname">First Name:*</label>
+                <input type="text" id ="fname" name="fname" required placeholder="First Name">
+                </li>
+                <br>
+                <li>
+                <label for="lname">Last Name:*</label>
+                <input type="text" id="lname" name="lname" required placeholder="Last Name">
+                </li>
+                <br>
+                <li>
+                <label for="gender">Gender:*</label>
+                
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="male">female</label>
+                </li>
+                <br>
+                <li>
+                <label for="date">Date of Birth:</label>
+                <input type="date" id="date" name="date" placeholder="Date">
+                </li>
+                <br>
+                <li>
+                <label for="age">Age*</label>
+                <input type="number" id="age" name="age" placeholder="Age" required>
+                </li>
+                <br>
+                <li>
+                    <label for="age">Blood Type*</label>
+                    <input type="text" id="blood" name="blood" placeholder="Blood Type" required>
+                </li>
+                <li>
+                    <label for="diabetic">Diabetic:</label>
+                    <input type="radio" id="yes" name="diabetic" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="diabetic" value="female">
+                    <label for="no">No</label>
+                </li>
+                <br>
+                <li>
+                <label for="home">Hometown:*</label>
+                <input type="text" id="home" name="home" placeholder="city">
+                </li>
+                <br>
+                <li>
+                <label for="msg">Medical Record:*</label>
+                <br>
+                <textarea id="" placeholder="Type here...." wrap="soft" rows="5"></textarea>
+                </li>
+            </ul>
+            <button>Save</button>
+            <p>The Record Has been added successfully</p>
+            </form>
+            </div>
+        </div>
+        <!-- End Addition  -->
+        <!-- Start Search  -->
+        <div class = "search" id="search">
+            <div class="searchHead">
+            <h2>Search</h2>
+            </div>
+            <div class="Query">
+        
+            <h3>Enter patient's ID</h3>
+            <input type="text" name="id" placeholder="ID">
+        </div>
+            <button>Search</button>
+        
+            <div class="results">
+                <p>There is no data record with this ID</p>
+                <div class="data" id ="data">
+                </div>
+                <div class="queries">
+                </div>
+                <p>The record has been updated successfully</p>
+            </div>
+        </div>
+        <!-- End Search  -->
+        <section id="contact">
+            <div class="contact container">
+                <div>
+                    <h1 class="section-title">Contact <span>info</span></h1>
+                </div>
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+                        <div class="contact-info">
+                            <h1>Phone</h1>
+                            <h2>+1 234 123 1234</h2>
+                            <h2>+1 234 123 1234</h2>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+                        <div class="contact-info">
+                            <h1>Email</h1>
+                            <h2>info@gmail.com</h2>
+                            <h2>abcd@gmail.com</h2>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+                        <div class="contact-info">
+                            <h1>Address</h1>
+                            <h2>Sohag, Sohag, Sohag</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+        
+        <script src="JS/index.js"></script>
+    </body>
+</html>
